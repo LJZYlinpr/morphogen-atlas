@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b141a">
+  <link rel="icon" href="data:,">
+  <title>Morphogen Pathways · Fetal Brain 3D</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <div class="brand"><span class="brand-mark"><i></i><i></i><i></i></span><span>Morphogen <b>Atlas</b><small>FETAL BRAIN / STATIC 3D VIEWER</small></span></div>
+      <div class="heading"><span>XYZ8 · FIXED 2M SAMPLE</span><h1>形态发生素通路空间表达图谱</h1></div>
+       <div class="status" id="status" role="status" aria-live="polite" data-state="loading">正在读取数据</div>
+    </header>
+    <main class="workspace">
+      <aside class="sidebar">
+        <section class="panel intro"><span class="eyebrow">STATIC DATASET</span><h2>全脑固定抽样</h2><p>395 个预计算层 · XYZ 50 μm 等比例</p><div class="metric"><strong id="sampleCount">--</strong><span>固定体素</span></div><div class="muted" id="dataSummary">加载中…</div></section>
+        <section class="panel">
+          <div class="section-title"><h2>显示内容</h2><span>01</span></div>
+          <select id="displayMode" aria-label="显示内容"><option value="gene">形态发生素基因表达</option><option value="celltype">细胞类型 · celltype_majority</option><option value="regions">解剖分区 · regions_majority</option><option value="region">大区 · region_majority</option><option value="leiden">聚类 · leiden_majority</option></select>
+          <label class="label" for="pathway">通路</label><select id="pathway"></select>
+          <label class="label" for="gene">基因</label><select id="gene"></select>
+          <p class="hint" id="geneHint">选择一个基因查看固定 200 万体素中的表达分布。</p>
+          <label class="check"><input id="showZero" type="checkbox"><span>显示零表达体素<small>以低亮度显示空间背景</small></span></label>
+           <label class="slider-label" for="threshold"><span>表达阈值 · 原始值</span><output id="thresholdValue" for="threshold">0</output></label><input id="threshold" type="range" min="0" max="1" step="any" value="0">
+        </section>
+        <section class="panel">
+          <div class="section-title"><h2>显示设置</h2><span>02</span></div>
+          <label class="slider-label"><span>点大小</span><output id="pointSizeValue">1.5 px</output></label><input id="pointSize" type="range" min="0.2" max="10" step="0.1" value="1.5">
+          <label class="slider-label"><span>不透明度</span><output id="opacityValue">72%</output></label><input id="opacity" type="range" min="0.15" max="1" step="0.05" value="0.72">
+          <label class="check"><input id="showAxes" type="checkbox" checked><span>显示空间坐标轴<small>物理坐标，XYZ 等比例</small></span></label>
+          <button id="resetView" class="button">重置视角</button><button id="export" class="button">导出 PNG</button>
+        </section>
+         <section class="panel note"><span class="eyebrow">DATA NOTE</span><p>本包只包含预先固定抽取的 200 万个 50 μm 体素。网页不连接 H5AD、不执行抽样或表达计算、不生成虚拟切片。</p><p>表达值是 bin mean expression；106 个预设基因中有 104 个可用。SMAD8 和 RXRB 不在最终数据中，不能视为零表达。</p></section>
+      </aside>
+      <section class="stage"><div id="viewport"></div><div class="stage-title"><span>3D SPATIAL EXPLORER</span><h2 id="sceneTitle">正在准备全脑空间</h2><p>已完成的 XYZ8 395 层体数据 · 固定样本</p></div><div class="toolbar"><button id="axisX">X</button><button id="axisY">Y</button><button id="axisZ">Z</button></div><div class="legend" id="legend"><h3 id="legendTitle">图例</h3><div id="legendBody"></div></div><div class="loading" id="loading"><div class="orbit"></div><h3>正在装载固定图谱</h3><p id="loadingText">读取空间坐标与标签</p></div><div class="inspector" id="inspector" hidden></div><div class="stage-foot"><span>拖动旋转 · 滚轮缩放 · Shift + 单击查看体素</span><span>PHYSICAL SPACE · μm</span></div></section>
+    </main>
+    <footer><span><i></i>离线静态数据包 · 无服务器计算</span><span id="footerInfo">--</span></footer>
+  </div>
+  <noscript>请在浏览器设置中启用 JavaScript 后重新打开。</noscript>
+  <script>
+    window.viewerScriptFailed = function (name) {
+      document.getElementById('status').textContent = '启动失败';
+      document.getElementById('loadingText').textContent = name + ' 未能加载。请完整解压 ZIP 到普通文件夹，不要在压缩软件中打开 HTML。';
+    };
+  </script>
+  <script src="boot.js" onerror="viewerScriptFailed('boot.js')"></script>
+  <script src="main.js" onerror="viewerScriptFailed('main.js')"></script>
+</body>
+</html>

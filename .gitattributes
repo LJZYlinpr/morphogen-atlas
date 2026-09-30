@@ -1,0 +1,7 @@
+* text=auto
+data/** binary
+*.f32 binary
+*.u8 binary
+*.u16 binary
+*.u32 binary
+*.gz binary

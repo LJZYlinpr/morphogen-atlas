@@ -1,0 +1,3274 @@
+{
+  "format": "morphogen-static-viewer-v1",
+  "source": "ST1_ST119_xyz8_395layer_50um_mean.h5ad",
+  "source_signature": {
+    "size": 165388597638,
+    "mtime_ns": 1790668549000000000
+  },
+  "seed": 20260930,
+  "n_points": 2000000,
+  "n_source_voxels": 26905114,
+  "n_layers": 395,
+  "n_genes_panel": 106,
+  "available_genes": 104,
+  "missing_genes": [
+    "SMAD8",
+    "RXRB"
+  ],
+  "coordinate_um": [
+    50,
+    50,
+    50
+  ],
+  "center_um": [
+    21525.0,
+    15375.0,
+    9850.0
+  ],
+  "extent": [
+    -10100.0,
+    -9500.0,
+    -9850.0,
+    11200.0,
+    22100.0,
+    9850.0
+  ],
+  "layers": [
+    {
+      "index": 0,
+      "key": "ST1",
+      "z_um": 0,
+      "observed": true
+    },
+    {
+      "index": 1,
+      "key": "z00050",
+      "z_um": 50,
+      "observed": false
+    },
+    {
+      "index": 2,
+      "key": "z00100",
+      "z_um": 100,
+      "observed": false
+    },
+    {
+      "index": 3,
+      "key": "z00150",
+      "z_um": 150,
+      "observed": false
+    },
+    {
+      "index": 4,
+      "key": "z00200",
+      "z_um": 200,
+      "observed": false
+    },
+    {
+      "index": 5,
+      "key": "z00250",
+      "z_um": 250,
+      "observed": false
+    },
+    {
+      "index": 6,
+      "key": "z00300",
+      "z_um": 300,
+      "observed": false
+    },
+    {
+      "index": 7,
+      "key": "z00350",
+      "z_um": 350,
+      "observed": false
+    },
+    {
+      "index": 8,
+      "key": "ST2",
+      "z_um": 400,
+      "observed": true
+    },
+    {
+      "index": 9,
+      "key": "z00450",
+      "z_um": 450,
+      "observed": false
+    },
+    {
+      "index": 10,
+      "key": "z00500",
+      "z_um": 500,
+      "observed": false
+    },
+    {
+      "index": 11,
+      "key": "z00550",
+      "z_um": 550,
+      "observed": false
+    },
+    {
+      "index": 12,
+      "key": "z00600",
+      "z_um": 600,
+      "observed": false
+    },
+    {
+      "index": 13,
+      "key": "z00650",
+      "z_um": 650,
+      "observed": false
+    },
+    {
+      "index": 14,
+      "key": "z00700",
+      "z_um": 700,
+      "observed": false
+    },
+    {
+      "index": 15,
+      "key": "z00750",
+      "z_um": 750,
+      "observed": false
+    },
+    {
+      "index": 16,
+      "key": "ST3",
+      "z_um": 800,
+      "observed": true
+    },
+    {
+      "index": 17,
+      "key": "z00850",
+      "z_um": 850,
+      "observed": false
+    },
+    {
+      "index": 18,
+      "key": "z00900",
+      "z_um": 900,
+      "observed": false
+    },
+    {
+      "index": 19,
+      "key": "z00950",
+      "z_um": 950,
+      "observed": false
+    },
+    {
+      "index": 20,
+      "key": "z01000",
+      "z_um": 1000,
+      "observed": false
+    },
+    {
+      "index": 21,
+      "key": "z01050",
+      "z_um": 1050,
+      "observed": false
+    },
+    {
+      "index": 22,
+      "key": "z01100",
+      "z_um": 1100,
+      "observed": false
+    },
+    {
+      "index": 23,
+      "key": "z01150",
+      "z_um": 1150,
+      "observed": false
+    },
+    {
+      "index": 24,
+      "key": "ST4",
+      "z_um": 1200,
+      "observed": true
+    },
+    {
+      "index": 25,
+      "key": "z01250",
+      "z_um": 1250,
+      "observed": false
+    },
+    {
+      "index": 26,
+      "key": "z01300",
+      "z_um": 1300,
+      "observed": false
+    },
+    {
+      "index": 27,
+      "key": "z01350",
+      "z_um": 1350,
+      "observed": false
+    },
+    {
+      "index": 28,
+      "key": "z01400",
+      "z_um": 1400,
+      "observed": false
+    },
+    {
+      "index": 29,
+      "key": "z01450",
+      "z_um": 1450,
+      "observed": false
+    },
+    {
+      "index": 30,
+      "key": "z01500",
+      "z_um": 1500,
+      "observed": false
+    },
+    {
+      "index": 31,
+      "key": "z01550",
+      "z_um": 1550,
+      "observed": false
+    },
+    {
+      "index": 32,
+      "key": "ST5",
+      "z_um": 1600,
+      "observed": true
+    },
+    {
+      "index": 33,
+      "key": "z01650",
+      "z_um": 1650,
+      "observed": false
+    },
+    {
+      "index": 34,
+      "key": "z01700",
+      "z_um": 1700,
+      "observed": false
+    },
+    {
+      "index": 35,
+      "key": "z01750",
+      "z_um": 1750,
+      "observed": false
+    },
+    {
+      "index": 36,
+      "key": "z01800",
+      "z_um": 1800,
+      "observed": false
+    },
+    {
+      "index": 37,
+      "key": "z01850",
+      "z_um": 1850,
+      "observed": false
+    },
+    {
+      "index": 38,
+      "key": "z01900",
+      "z_um": 1900,
+      "observed": false
+    },
+    {
+      "index": 39,
+      "key": "z01950",
+      "z_um": 1950,
+      "observed": false
+    },
+    {
+      "index": 40,
+      "key": "ST6",
+      "z_um": 2000,
+      "observed": true
+    },
+    {
+      "index": 41,
+      "key": "z02050",
+      "z_um": 2050,
+      "observed": false
+    },
+    {
+      "index": 42,
+      "key": "z02100",
+      "z_um": 2100,
+      "observed": false
+    },
+    {
+      "index": 43,
+      "key": "z02150",
+      "z_um": 2150,
+      "observed": false
+    },
+    {
+      "index": 44,
+      "key": "z02200",
+      "z_um": 2200,
+      "observed": false
+    },
+    {
+      "index": 45,
+      "key": "z02250",
+      "z_um": 2250,
+      "observed": false
+    },
+    {
+      "index": 46,
+      "key": "z02300",
+      "z_um": 2300,
+      "observed": false
+    },
+    {
+      "index": 47,
+      "key": "z02350",
+      "z_um": 2350,
+      "observed": false
+    },
+    {
+      "index": 48,
+      "key": "ST7",
+      "z_um": 2400,
+      "observed": true
+    },
+    {
+      "index": 49,
+      "key": "z02450",
+      "z_um": 2450,
+      "observed": false
+    },
+    {
+      "index": 50,
+      "key": "z02500",
+      "z_um": 2500,
+      "observed": false
+    },
+    {
+      "index": 51,
+      "key": "z02550",
+      "z_um": 2550,
+      "observed": false
+    },
+    {
+      "index": 52,
+      "key": "z02600",
+      "z_um": 2600,
+      "observed": false
+    },
+    {
+      "index": 53,
+      "key": "z02650",
+      "z_um": 2650,
+      "observed": false
+    },
+    {
+      "index": 54,
+      "key": "z02700",
+      "z_um": 2700,
+      "observed": false
+    },
+    {
+      "index": 55,
+      "key": "z02750",
+      "z_um": 2750,
+      "observed": false
+    },
+    {
+      "index": 56,
+      "key": "ST8",
+      "z_um": 2800,
+      "observed": true
+    },
+    {
+      "index": 57,
+      "key": "z02850",
+      "z_um": 2850,
+      "observed": false
+    },
+    {
+      "index": 58,
+      "key": "z02900",
+      "z_um": 2900,
+      "observed": false
+    },
+    {
+      "index": 59,
+      "key": "z02950",
+      "z_um": 2950,
+      "observed": false
+    },
+    {
+      "index": 60,
+      "key": "z03000",
+      "z_um": 3000,
+      "observed": false
+    },
+    {
+      "index": 61,
+      "key": "z03050",
+      "z_um": 3050,
+      "observed": false
+    },
+    {
+      "index": 62,
+      "key": "z03100",
+      "z_um": 3100,
+      "observed": false
+    },
+    {
+      "index": 63,
+      "key": "z03150",
+      "z_um": 3150,
+      "observed": false
+    },
+    {
+      "index": 64,
+      "key": "ST9",
+      "z_um": 3200,
+      "observed": true
+    },
+    {
+      "index": 65,
+      "key": "z03250",
+      "z_um": 3250,
+      "observed": false
+    },
+    {
+      "index": 66,
+      "key": "z03300",
+      "z_um": 3300,
+      "observed": false
+    },
+    {
+      "index": 67,
+      "key": "z03350",
+      "z_um": 3350,
+      "observed": false
+    },
+    {
+      "index": 68,
+      "key": "z03400",
+      "z_um": 3400,
+      "observed": false
+    },
+    {
+      "index": 69,
+      "key": "z03450",
+      "z_um": 3450,
+      "observed": false
+    },
+    {
+      "index": 70,
+      "key": "z03500",
+      "z_um": 3500,
+      "observed": false
+    },
+    {
+      "index": 71,
+      "key": "z03550",
+      "z_um": 3550,
+      "observed": false
+    },
+    {
+      "index": 72,
+      "key": "ST10",
+      "z_um": 3600,
+      "observed": true
+    },
+    {
+      "index": 73,
+      "key": "z03650",
+      "z_um": 3650,
+      "observed": false
+    },
+    {
+      "index": 74,
+      "key": "z03700",
+      "z_um": 3700,
+      "observed": false
+    },
+    {
+      "index": 75,
+      "key": "z03750",
+      "z_um": 3750,
+      "observed": false
+    },
+    {
+      "index": 76,
+      "key": "z03800",
+      "z_um": 3800,
+      "observed": false
+    },
+    {
+      "index": 77,
+      "key": "z03850",
+      "z_um": 3850,
+      "observed": false
+    },
+    {
+      "index": 78,
+      "key": "z03900",
+      "z_um": 3900,
+      "observed": false
+    },
+    {
+      "index": 79,
+      "key": "z03950",
+      "z_um": 3950,
+      "observed": false
+    },
+    {
+      "index": 80,
+      "key": "ST11",
+      "z_um": 4000,
+      "observed": true
+    },
+    {
+      "index": 81,
+      "key": "z04050",
+      "z_um": 4050,
+      "observed": false
+    },
+    {
+      "index": 82,
+      "key": "z04100",
+      "z_um": 4100,
+      "observed": false
+    },
+    {
+      "index": 83,
+      "key": "z04150",
+      "z_um": 4150,
+      "observed": false
+    },
+    {
+      "index": 84,
+      "key": "z04200",
+      "z_um": 4200,
+      "observed": false
+    },
+    {
+      "index": 85,
+      "key": "z04250",
+      "z_um": 4250,
+      "observed": false
+    },
+    {
+      "index": 86,
+      "key": "z04300",
+      "z_um": 4300,
+      "observed": false
+    },
+    {
+      "index": 87,
+      "key": "z04350",
+      "z_um": 4350,
+      "observed": false
+    },
+    {
+      "index": 88,
+      "key": "ST12",
+      "z_um": 4400,
+      "observed": true
+    },
+    {
+      "index": 89,
+      "key": "z04450",
+      "z_um": 4450,
+      "observed": false
+    },
+    {
+      "index": 90,
+      "key": "z04500",
+      "z_um": 4500,
+      "observed": false
+    },
+    {
+      "index": 91,
+      "key": "z04550",
+      "z_um": 4550,
+      "observed": false
+    },
+    {
+      "index": 92,
+      "key": "z04600",
+      "z_um": 4600,
+      "observed": false
+    },
+    {
+      "index": 93,
+      "key": "z04650",
+      "z_um": 4650,
+      "observed": false
+    },
+    {
+      "index": 94,
+      "key": "z04700",
+      "z_um": 4700,
+      "observed": false
+    },
+    {
+      "index": 95,
+      "key": "z04750",
+      "z_um": 4750,
+      "observed": false
+    },
+    {
+      "index": 96,
+      "key": "ST13",
+      "z_um": 4800,
+      "observed": true
+    },
+    {
+      "index": 97,
+      "key": "z04850",
+      "z_um": 4850,
+      "observed": false
+    },
+    {
+      "index": 98,
+      "key": "z04900",
+      "z_um": 4900,
+      "observed": false
+    },
+    {
+      "index": 99,
+      "key": "z04950",
+      "z_um": 4950,
+      "observed": false
+    },
+    {
+      "index": 100,
+      "key": "z05000",
+      "z_um": 5000,
+      "observed": false
+    },
+    {
+      "index": 101,
+      "key": "z05050",
+      "z_um": 5050,
+      "observed": false
+    },
+    {
+      "index": 102,
+      "key": "z05100",
+      "z_um": 5100,
+      "observed": false
+    },
+    {
+      "index": 103,
+      "key": "z05150",
+      "z_um": 5150,
+      "observed": false
+    },
+    {
+      "index": 104,
+      "key": "ST14",
+      "z_um": 5200,
+      "observed": true
+    },
+    {
+      "index": 105,
+      "key": "z05250",
+      "z_um": 5250,
+      "observed": false
+    },
+    {
+      "index": 106,
+      "key": "z05300",
+      "z_um": 5300,
+      "observed": false
+    },
+    {
+      "index": 107,
+      "key": "z05350",
+      "z_um": 5350,
+      "observed": false
+    },
+    {
+      "index": 108,
+      "key": "z05400",
+      "z_um": 5400,
+      "observed": false
+    },
+    {
+      "index": 109,
+      "key": "z05450",
+      "z_um": 5450,
+      "observed": false
+    },
+    {
+      "index": 110,
+      "key": "ST16",
+      "z_um": 5500,
+      "observed": true
+    },
+    {
+      "index": 111,
+      "key": "z05550",
+      "z_um": 5550,
+      "observed": false
+    },
+    {
+      "index": 112,
+      "key": "z05600",
+      "z_um": 5600,
+      "observed": false
+    },
+    {
+      "index": 113,
+      "key": "z05650",
+      "z_um": 5650,
+      "observed": false
+    },
+    {
+      "index": 114,
+      "key": "z05700",
+      "z_um": 5700,
+      "observed": false
+    },
+    {
+      "index": 115,
+      "key": "z05750",
+      "z_um": 5750,
+      "observed": false
+    },
+    {
+      "index": 116,
+      "key": "z05800",
+      "z_um": 5800,
+      "observed": false
+    },
+    {
+      "index": 117,
+      "key": "z05850",
+      "z_um": 5850,
+      "observed": false
+    },
+    {
+      "index": 118,
+      "key": "ST18",
+      "z_um": 5900,
+      "observed": true
+    },
+    {
+      "index": 119,
+      "key": "z05950",
+      "z_um": 5950,
+      "observed": false
+    },
+    {
+      "index": 120,
+      "key": "z06000",
+      "z_um": 6000,
+      "observed": false
+    },
+    {
+      "index": 121,
+      "key": "z06050",
+      "z_um": 6050,
+      "observed": false
+    },
+    {
+      "index": 122,
+      "key": "z06100",
+      "z_um": 6100,
+      "observed": false
+    },
+    {
+      "index": 123,
+      "key": "z06150",
+      "z_um": 6150,
+      "observed": false
+    },
+    {
+      "index": 124,
+      "key": "z06200",
+      "z_um": 6200,
+      "observed": false
+    },
+    {
+      "index": 125,
+      "key": "z06250",
+      "z_um": 6250,
+      "observed": false
+    },
+    {
+      "index": 126,
+      "key": "ST20",
+      "z_um": 6300,
+      "observed": true
+    },
+    {
+      "index": 127,
+      "key": "z06350",
+      "z_um": 6350,
+      "observed": false
+    },
+    {
+      "index": 128,
+      "key": "z06400",
+      "z_um": 6400,
+      "observed": false
+    },
+    {
+      "index": 129,
+      "key": "z06450",
+      "z_um": 6450,
+      "observed": false
+    },
+    {
+      "index": 130,
+      "key": "z06500",
+      "z_um": 6500,
+      "observed": false
+    },
+    {
+      "index": 131,
+      "key": "z06550",
+      "z_um": 6550,
+      "observed": false
+    },
+    {
+      "index": 132,
+      "key": "z06600",
+      "z_um": 6600,
+      "observed": false
+    },
+    {
+      "index": 133,
+      "key": "z06650",
+      "z_um": 6650,
+      "observed": false
+    },
+    {
+      "index": 134,
+      "key": "ST22",
+      "z_um": 6700,
+      "observed": true
+    },
+    {
+      "index": 135,
+      "key": "z06750",
+      "z_um": 6750,
+      "observed": false
+    },
+    {
+      "index": 136,
+      "key": "z06800",
+      "z_um": 6800,
+      "observed": false
+    },
+    {
+      "index": 137,
+      "key": "z06850",
+      "z_um": 6850,
+      "observed": false
+    },
+    {
+      "index": 138,
+      "key": "z06900",
+      "z_um": 6900,
+      "observed": false
+    },
+    {
+      "index": 139,
+      "key": "z06950",
+      "z_um": 6950,
+      "observed": false
+    },
+    {
+      "index": 140,
+      "key": "z07000",
+      "z_um": 7000,
+      "observed": false
+    },
+    {
+      "index": 141,
+      "key": "z07050",
+      "z_um": 7050,
+      "observed": false
+    },
+    {
+      "index": 142,
+      "key": "ST23",
+      "z_um": 7100,
+      "observed": true
+    },
+    {
+      "index": 143,
+      "key": "z07150",
+      "z_um": 7150,
+      "observed": false
+    },
+    {
+      "index": 144,
+      "key": "z07200",
+      "z_um": 7200,
+      "observed": false
+    },
+    {
+      "index": 145,
+      "key": "z07250",
+      "z_um": 7250,
+      "observed": false
+    },
+    {
+      "index": 146,
+      "key": "z07300",
+      "z_um": 7300,
+      "observed": false
+    },
+    {
+      "index": 147,
+      "key": "z07350",
+      "z_um": 7350,
+      "observed": false
+    },
+    {
+      "index": 148,
+      "key": "z07400",
+      "z_um": 7400,
+      "observed": false
+    },
+    {
+      "index": 149,
+      "key": "z07450",
+      "z_um": 7450,
+      "observed": false
+    },
+    {
+      "index": 150,
+      "key": "ST27",
+      "z_um": 7500,
+      "observed": true
+    },
+    {
+      "index": 151,
+      "key": "z07550",
+      "z_um": 7550,
+      "observed": false
+    },
+    {
+      "index": 152,
+      "key": "z07600",
+      "z_um": 7600,
+      "observed": false
+    },
+    {
+      "index": 153,
+      "key": "z07650",
+      "z_um": 7650,
+      "observed": false
+    },
+    {
+      "index": 154,
+      "key": "z07700",
+      "z_um": 7700,
+      "observed": false
+    },
+    {
+      "index": 155,
+      "key": "z07750",
+      "z_um": 7750,
+      "observed": false
+    },
+    {
+      "index": 156,
+      "key": "z07800",
+      "z_um": 7800,
+      "observed": false
+    },
+    {
+      "index": 157,
+      "key": "z07850",
+      "z_um": 7850,
+      "observed": false
+    },
+    {
+      "index": 158,
+      "key": "ST31",
+      "z_um": 7900,
+      "observed": true
+    },
+    {
+      "index": 159,
+      "key": "z07950",
+      "z_um": 7950,
+      "observed": false
+    },
+    {
+      "index": 160,
+      "key": "z08000",
+      "z_um": 8000,
+      "observed": false
+    },
+    {
+      "index": 161,
+      "key": "z08050",
+      "z_um": 8050,
+      "observed": false
+    },
+    {
+      "index": 162,
+      "key": "z08100",
+      "z_um": 8100,
+      "observed": false
+    },
+    {
+      "index": 163,
+      "key": "z08150",
+      "z_um": 8150,
+      "observed": false
+    },
+    {
+      "index": 164,
+      "key": "z08200",
+      "z_um": 8200,
+      "observed": false
+    },
+    {
+      "index": 165,
+      "key": "z08250",
+      "z_um": 8250,
+      "observed": false
+    },
+    {
+      "index": 166,
+      "key": "ST35",
+      "z_um": 8300,
+      "observed": true
+    },
+    {
+      "index": 167,
+      "key": "z08350",
+      "z_um": 8350,
+      "observed": false
+    },
+    {
+      "index": 168,
+      "key": "z08400",
+      "z_um": 8400,
+      "observed": false
+    },
+    {
+      "index": 169,
+      "key": "z08450",
+      "z_um": 8450,
+      "observed": false
+    },
+    {
+      "index": 170,
+      "key": "z08500",
+      "z_um": 8500,
+      "observed": false
+    },
+    {
+      "index": 171,
+      "key": "z08550",
+      "z_um": 8550,
+      "observed": false
+    },
+    {
+      "index": 172,
+      "key": "z08600",
+      "z_um": 8600,
+      "observed": false
+    },
+    {
+      "index": 173,
+      "key": "z08650",
+      "z_um": 8650,
+      "observed": false
+    },
+    {
+      "index": 174,
+      "key": "ST39",
+      "z_um": 8700,
+      "observed": true
+    },
+    {
+      "index": 175,
+      "key": "z08750",
+      "z_um": 8750,
+      "observed": false
+    },
+    {
+      "index": 176,
+      "key": "z08800",
+      "z_um": 8800,
+      "observed": false
+    },
+    {
+      "index": 177,
+      "key": "z08850",
+      "z_um": 8850,
+      "observed": false
+    },
+    {
+      "index": 178,
+      "key": "z08900",
+      "z_um": 8900,
+      "observed": false
+    },
+    {
+      "index": 179,
+      "key": "z08950",
+      "z_um": 8950,
+      "observed": false
+    },
+    {
+      "index": 180,
+      "key": "z09000",
+      "z_um": 9000,
+      "observed": false
+    },
+    {
+      "index": 181,
+      "key": "z09050",
+      "z_um": 9050,
+      "observed": false
+    },
+    {
+      "index": 182,
+      "key": "ST43",
+      "z_um": 9100,
+      "observed": true
+    },
+    {
+      "index": 183,
+      "key": "z09150",
+      "z_um": 9150,
+      "observed": false
+    },
+    {
+      "index": 184,
+      "key": "z09200",
+      "z_um": 9200,
+      "observed": false
+    },
+    {
+      "index": 185,
+      "key": "z09250",
+      "z_um": 9250,
+      "observed": false
+    },
+    {
+      "index": 186,
+      "key": "z09300",
+      "z_um": 9300,
+      "observed": false
+    },
+    {
+      "index": 187,
+      "key": "z09350",
+      "z_um": 9350,
+      "observed": false
+    },
+    {
+      "index": 188,
+      "key": "z09400",
+      "z_um": 9400,
+      "observed": false
+    },
+    {
+      "index": 189,
+      "key": "z09450",
+      "z_um": 9450,
+      "observed": false
+    },
+    {
+      "index": 190,
+      "key": "ST47",
+      "z_um": 9500,
+      "observed": true
+    },
+    {
+      "index": 191,
+      "key": "z09550",
+      "z_um": 9550,
+      "observed": false
+    },
+    {
+      "index": 192,
+      "key": "z09600",
+      "z_um": 9600,
+      "observed": false
+    },
+    {
+      "index": 193,
+      "key": "z09650",
+      "z_um": 9650,
+      "observed": false
+    },
+    {
+      "index": 194,
+      "key": "z09700",
+      "z_um": 9700,
+      "observed": false
+    },
+    {
+      "index": 195,
+      "key": "z09750",
+      "z_um": 9750,
+      "observed": false
+    },
+    {
+      "index": 196,
+      "key": "z09800",
+      "z_um": 9800,
+      "observed": false
+    },
+    {
+      "index": 197,
+      "key": "z09850",
+      "z_um": 9850,
+      "observed": false
+    },
+    {
+      "index": 198,
+      "key": "ST51",
+      "z_um": 9900,
+      "observed": true
+    },
+    {
+      "index": 199,
+      "key": "z09950",
+      "z_um": 9950,
+      "observed": false
+    },
+    {
+      "index": 200,
+      "key": "z10000",
+      "z_um": 10000,
+      "observed": false
+    },
+    {
+      "index": 201,
+      "key": "z10050",
+      "z_um": 10050,
+      "observed": false
+    },
+    {
+      "index": 202,
+      "key": "z10100",
+      "z_um": 10100,
+      "observed": false
+    },
+    {
+      "index": 203,
+      "key": "z10150",
+      "z_um": 10150,
+      "observed": false
+    },
+    {
+      "index": 204,
+      "key": "z10200",
+      "z_um": 10200,
+      "observed": false
+    },
+    {
+      "index": 205,
+      "key": "z10250",
+      "z_um": 10250,
+      "observed": false
+    },
+    {
+      "index": 206,
+      "key": "ST55",
+      "z_um": 10300,
+      "observed": true
+    },
+    {
+      "index": 207,
+      "key": "z10350",
+      "z_um": 10350,
+      "observed": false
+    },
+    {
+      "index": 208,
+      "key": "z10400",
+      "z_um": 10400,
+      "observed": false
+    },
+    {
+      "index": 209,
+      "key": "z10450",
+      "z_um": 10450,
+      "observed": false
+    },
+    {
+      "index": 210,
+      "key": "z10500",
+      "z_um": 10500,
+      "observed": false
+    },
+    {
+      "index": 211,
+      "key": "z10550",
+      "z_um": 10550,
+      "observed": false
+    },
+    {
+      "index": 212,
+      "key": "z10600",
+      "z_um": 10600,
+      "observed": false
+    },
+    {
+      "index": 213,
+      "key": "z10650",
+      "z_um": 10650,
+      "observed": false
+    },
+    {
+      "index": 214,
+      "key": "ST59",
+      "z_um": 10700,
+      "observed": true
+    },
+    {
+      "index": 215,
+      "key": "z10750",
+      "z_um": 10750,
+      "observed": false
+    },
+    {
+      "index": 216,
+      "key": "z10800",
+      "z_um": 10800,
+      "observed": false
+    },
+    {
+      "index": 217,
+      "key": "z10850",
+      "z_um": 10850,
+      "observed": false
+    },
+    {
+      "index": 218,
+      "key": "z10900",
+      "z_um": 10900,
+      "observed": false
+    },
+    {
+      "index": 219,
+      "key": "z10950",
+      "z_um": 10950,
+      "observed": false
+    },
+    {
+      "index": 220,
+      "key": "z11000",
+      "z_um": 11000,
+      "observed": false
+    },
+    {
+      "index": 221,
+      "key": "z11050",
+      "z_um": 11050,
+      "observed": false
+    },
+    {
+      "index": 222,
+      "key": "ST63",
+      "z_um": 11100,
+      "observed": true
+    },
+    {
+      "index": 223,
+      "key": "z11150",
+      "z_um": 11150,
+      "observed": false
+    },
+    {
+      "index": 224,
+      "key": "z11200",
+      "z_um": 11200,
+      "observed": false
+    },
+    {
+      "index": 225,
+      "key": "z11250",
+      "z_um": 11250,
+      "observed": false
+    },
+    {
+      "index": 226,
+      "key": "z11300",
+      "z_um": 11300,
+      "observed": false
+    },
+    {
+      "index": 227,
+      "key": "z11350",
+      "z_um": 11350,
+      "observed": false
+    },
+    {
+      "index": 228,
+      "key": "z11400",
+      "z_um": 11400,
+      "observed": false
+    },
+    {
+      "index": 229,
+      "key": "z11450",
+      "z_um": 11450,
+      "observed": false
+    },
+    {
+      "index": 230,
+      "key": "ST67",
+      "z_um": 11500,
+      "observed": true
+    },
+    {
+      "index": 231,
+      "key": "z11550",
+      "z_um": 11550,
+      "observed": false
+    },
+    {
+      "index": 232,
+      "key": "z11600",
+      "z_um": 11600,
+      "observed": false
+    },
+    {
+      "index": 233,
+      "key": "z11650",
+      "z_um": 11650,
+      "observed": false
+    },
+    {
+      "index": 234,
+      "key": "z11700",
+      "z_um": 11700,
+      "observed": false
+    },
+    {
+      "index": 235,
+      "key": "z11750",
+      "z_um": 11750,
+      "observed": false
+    },
+    {
+      "index": 236,
+      "key": "z11800",
+      "z_um": 11800,
+      "observed": false
+    },
+    {
+      "index": 237,
+      "key": "z11850",
+      "z_um": 11850,
+      "observed": false
+    },
+    {
+      "index": 238,
+      "key": "ST71",
+      "z_um": 11900,
+      "observed": true
+    },
+    {
+      "index": 239,
+      "key": "z11950",
+      "z_um": 11950,
+      "observed": false
+    },
+    {
+      "index": 240,
+      "key": "z12000",
+      "z_um": 12000,
+      "observed": false
+    },
+    {
+      "index": 241,
+      "key": "z12050",
+      "z_um": 12050,
+      "observed": false
+    },
+    {
+      "index": 242,
+      "key": "z12100",
+      "z_um": 12100,
+      "observed": false
+    },
+    {
+      "index": 243,
+      "key": "z12150",
+      "z_um": 12150,
+      "observed": false
+    },
+    {
+      "index": 244,
+      "key": "z12200",
+      "z_um": 12200,
+      "observed": false
+    },
+    {
+      "index": 245,
+      "key": "z12250",
+      "z_um": 12250,
+      "observed": false
+    },
+    {
+      "index": 246,
+      "key": "ST75",
+      "z_um": 12300,
+      "observed": true
+    },
+    {
+      "index": 247,
+      "key": "z12350",
+      "z_um": 12350,
+      "observed": false
+    },
+    {
+      "index": 248,
+      "key": "z12400",
+      "z_um": 12400,
+      "observed": false
+    },
+    {
+      "index": 249,
+      "key": "z12450",
+      "z_um": 12450,
+      "observed": false
+    },
+    {
+      "index": 250,
+      "key": "z12500",
+      "z_um": 12500,
+      "observed": false
+    },
+    {
+      "index": 251,
+      "key": "z12550",
+      "z_um": 12550,
+      "observed": false
+    },
+    {
+      "index": 252,
+      "key": "z12600",
+      "z_um": 12600,
+      "observed": false
+    },
+    {
+      "index": 253,
+      "key": "z12650",
+      "z_um": 12650,
+      "observed": false
+    },
+    {
+      "index": 254,
+      "key": "ST80",
+      "z_um": 12700,
+      "observed": true
+    },
+    {
+      "index": 255,
+      "key": "z12750",
+      "z_um": 12750,
+      "observed": false
+    },
+    {
+      "index": 256,
+      "key": "z12800",
+      "z_um": 12800,
+      "observed": false
+    },
+    {
+      "index": 257,
+      "key": "z12850",
+      "z_um": 12850,
+      "observed": false
+    },
+    {
+      "index": 258,
+      "key": "z12900",
+      "z_um": 12900,
+      "observed": false
+    },
+    {
+      "index": 259,
+      "key": "z12950",
+      "z_um": 12950,
+      "observed": false
+    },
+    {
+      "index": 260,
+      "key": "ST84",
+      "z_um": 13000,
+      "observed": true
+    },
+    {
+      "index": 261,
+      "key": "z13050",
+      "z_um": 13050,
+      "observed": false
+    },
+    {
+      "index": 262,
+      "key": "z13100",
+      "z_um": 13100,
+      "observed": false
+    },
+    {
+      "index": 263,
+      "key": "z13150",
+      "z_um": 13150,
+      "observed": false
+    },
+    {
+      "index": 264,
+      "key": "z13200",
+      "z_um": 13200,
+      "observed": false
+    },
+    {
+      "index": 265,
+      "key": "z13250",
+      "z_um": 13250,
+      "observed": false
+    },
+    {
+      "index": 266,
+      "key": "z13300",
+      "z_um": 13300,
+      "observed": false
+    },
+    {
+      "index": 267,
+      "key": "z13350",
+      "z_um": 13350,
+      "observed": false
+    },
+    {
+      "index": 268,
+      "key": "ST89",
+      "z_um": 13400,
+      "observed": true
+    },
+    {
+      "index": 269,
+      "key": "z13450",
+      "z_um": 13450,
+      "observed": false
+    },
+    {
+      "index": 270,
+      "key": "z13500",
+      "z_um": 13500,
+      "observed": false
+    },
+    {
+      "index": 271,
+      "key": "z13550",
+      "z_um": 13550,
+      "observed": false
+    },
+    {
+      "index": 272,
+      "key": "z13600",
+      "z_um": 13600,
+      "observed": false
+    },
+    {
+      "index": 273,
+      "key": "z13650",
+      "z_um": 13650,
+      "observed": false
+    },
+    {
+      "index": 274,
+      "key": "z13700",
+      "z_um": 13700,
+      "observed": false
+    },
+    {
+      "index": 275,
+      "key": "z13750",
+      "z_um": 13750,
+      "observed": false
+    },
+    {
+      "index": 276,
+      "key": "z13800",
+      "z_um": 13800,
+      "observed": false
+    },
+    {
+      "index": 277,
+      "key": "z13850",
+      "z_um": 13850,
+      "observed": false
+    },
+    {
+      "index": 278,
+      "key": "z13900",
+      "z_um": 13900,
+      "observed": false
+    },
+    {
+      "index": 279,
+      "key": "z13950",
+      "z_um": 13950,
+      "observed": false
+    },
+    {
+      "index": 280,
+      "key": "z14000",
+      "z_um": 14000,
+      "observed": false
+    },
+    {
+      "index": 281,
+      "key": "z14050",
+      "z_um": 14050,
+      "observed": false
+    },
+    {
+      "index": 282,
+      "key": "ST99",
+      "z_um": 14100,
+      "observed": true
+    },
+    {
+      "index": 283,
+      "key": "z14150",
+      "z_um": 14150,
+      "observed": false
+    },
+    {
+      "index": 284,
+      "key": "z14200",
+      "z_um": 14200,
+      "observed": false
+    },
+    {
+      "index": 285,
+      "key": "z14250",
+      "z_um": 14250,
+      "observed": false
+    },
+    {
+      "index": 286,
+      "key": "z14300",
+      "z_um": 14300,
+      "observed": false
+    },
+    {
+      "index": 287,
+      "key": "z14350",
+      "z_um": 14350,
+      "observed": false
+    },
+    {
+      "index": 288,
+      "key": "z14400",
+      "z_um": 14400,
+      "observed": false
+    },
+    {
+      "index": 289,
+      "key": "z14450",
+      "z_um": 14450,
+      "observed": false
+    },
+    {
+      "index": 290,
+      "key": "ST104",
+      "z_um": 14500,
+      "observed": true
+    },
+    {
+      "index": 291,
+      "key": "z14550",
+      "z_um": 14550,
+      "observed": false
+    },
+    {
+      "index": 292,
+      "key": "z14600",
+      "z_um": 14600,
+      "observed": false
+    },
+    {
+      "index": 293,
+      "key": "z14650",
+      "z_um": 14650,
+      "observed": false
+    },
+    {
+      "index": 294,
+      "key": "z14700",
+      "z_um": 14700,
+      "observed": false
+    },
+    {
+      "index": 295,
+      "key": "z14750",
+      "z_um": 14750,
+      "observed": false
+    },
+    {
+      "index": 296,
+      "key": "z14800",
+      "z_um": 14800,
+      "observed": false
+    },
+    {
+      "index": 297,
+      "key": "z14850",
+      "z_um": 14850,
+      "observed": false
+    },
+    {
+      "index": 298,
+      "key": "ST105",
+      "z_um": 14900,
+      "observed": true
+    },
+    {
+      "index": 299,
+      "key": "z14950",
+      "z_um": 14950,
+      "observed": false
+    },
+    {
+      "index": 300,
+      "key": "z15000",
+      "z_um": 15000,
+      "observed": false
+    },
+    {
+      "index": 301,
+      "key": "z15050",
+      "z_um": 15050,
+      "observed": false
+    },
+    {
+      "index": 302,
+      "key": "z15100",
+      "z_um": 15100,
+      "observed": false
+    },
+    {
+      "index": 303,
+      "key": "z15150",
+      "z_um": 15150,
+      "observed": false
+    },
+    {
+      "index": 304,
+      "key": "z15200",
+      "z_um": 15200,
+      "observed": false
+    },
+    {
+      "index": 305,
+      "key": "z15250",
+      "z_um": 15250,
+      "observed": false
+    },
+    {
+      "index": 306,
+      "key": "ST106",
+      "z_um": 15300,
+      "observed": true
+    },
+    {
+      "index": 307,
+      "key": "z15350",
+      "z_um": 15350,
+      "observed": false
+    },
+    {
+      "index": 308,
+      "key": "z15400",
+      "z_um": 15400,
+      "observed": false
+    },
+    {
+      "index": 309,
+      "key": "z15450",
+      "z_um": 15450,
+      "observed": false
+    },
+    {
+      "index": 310,
+      "key": "z15500",
+      "z_um": 15500,
+      "observed": false
+    },
+    {
+      "index": 311,
+      "key": "z15550",
+      "z_um": 15550,
+      "observed": false
+    },
+    {
+      "index": 312,
+      "key": "z15600",
+      "z_um": 15600,
+      "observed": false
+    },
+    {
+      "index": 313,
+      "key": "z15650",
+      "z_um": 15650,
+      "observed": false
+    },
+    {
+      "index": 314,
+      "key": "ST108",
+      "z_um": 15700,
+      "observed": true
+    },
+    {
+      "index": 315,
+      "key": "z15750",
+      "z_um": 15750,
+      "observed": false
+    },
+    {
+      "index": 316,
+      "key": "z15800",
+      "z_um": 15800,
+      "observed": false
+    },
+    {
+      "index": 317,
+      "key": "z15850",
+      "z_um": 15850,
+      "observed": false
+    },
+    {
+      "index": 318,
+      "key": "z15900",
+      "z_um": 15900,
+      "observed": false
+    },
+    {
+      "index": 319,
+      "key": "z15950",
+      "z_um": 15950,
+      "observed": false
+    },
+    {
+      "index": 320,
+      "key": "z16000",
+      "z_um": 16000,
+      "observed": false
+    },
+    {
+      "index": 321,
+      "key": "z16050",
+      "z_um": 16050,
+      "observed": false
+    },
+    {
+      "index": 322,
+      "key": "ST110",
+      "z_um": 16100,
+      "observed": true
+    },
+    {
+      "index": 323,
+      "key": "z16150",
+      "z_um": 16150,
+      "observed": false
+    },
+    {
+      "index": 324,
+      "key": "z16200",
+      "z_um": 16200,
+      "observed": false
+    },
+    {
+      "index": 325,
+      "key": "z16250",
+      "z_um": 16250,
+      "observed": false
+    },
+    {
+      "index": 326,
+      "key": "z16300",
+      "z_um": 16300,
+      "observed": false
+    },
+    {
+      "index": 327,
+      "key": "z16350",
+      "z_um": 16350,
+      "observed": false
+    },
+    {
+      "index": 328,
+      "key": "z16400",
+      "z_um": 16400,
+      "observed": false
+    },
+    {
+      "index": 329,
+      "key": "z16450",
+      "z_um": 16450,
+      "observed": false
+    },
+    {
+      "index": 330,
+      "key": "z16500",
+      "z_um": 16500,
+      "observed": false
+    },
+    {
+      "index": 331,
+      "key": "z16550",
+      "z_um": 16550,
+      "observed": false
+    },
+    {
+      "index": 332,
+      "key": "z16600",
+      "z_um": 16600,
+      "observed": false
+    },
+    {
+      "index": 333,
+      "key": "z16650",
+      "z_um": 16650,
+      "observed": false
+    },
+    {
+      "index": 334,
+      "key": "z16700",
+      "z_um": 16700,
+      "observed": false
+    },
+    {
+      "index": 335,
+      "key": "z16750",
+      "z_um": 16750,
+      "observed": false
+    },
+    {
+      "index": 336,
+      "key": "z16800",
+      "z_um": 16800,
+      "observed": false
+    },
+    {
+      "index": 337,
+      "key": "z16850",
+      "z_um": 16850,
+      "observed": false
+    },
+    {
+      "index": 338,
+      "key": "ST113",
+      "z_um": 16900,
+      "observed": true
+    },
+    {
+      "index": 339,
+      "key": "z16950",
+      "z_um": 16950,
+      "observed": false
+    },
+    {
+      "index": 340,
+      "key": "z17000",
+      "z_um": 17000,
+      "observed": false
+    },
+    {
+      "index": 341,
+      "key": "z17050",
+      "z_um": 17050,
+      "observed": false
+    },
+    {
+      "index": 342,
+      "key": "z17100",
+      "z_um": 17100,
+      "observed": false
+    },
+    {
+      "index": 343,
+      "key": "z17150",
+      "z_um": 17150,
+      "observed": false
+    },
+    {
+      "index": 344,
+      "key": "z17200",
+      "z_um": 17200,
+      "observed": false
+    },
+    {
+      "index": 345,
+      "key": "z17250",
+      "z_um": 17250,
+      "observed": false
+    },
+    {
+      "index": 346,
+      "key": "ST114",
+      "z_um": 17300,
+      "observed": true
+    },
+    {
+      "index": 347,
+      "key": "z17350",
+      "z_um": 17350,
+      "observed": false
+    },
+    {
+      "index": 348,
+      "key": "z17400",
+      "z_um": 17400,
+      "observed": false
+    },
+    {
+      "index": 349,
+      "key": "z17450",
+      "z_um": 17450,
+      "observed": false
+    },
+    {
+      "index": 350,
+      "key": "z17500",
+      "z_um": 17500,
+      "observed": false
+    },
+    {
+      "index": 351,
+      "key": "z17550",
+      "z_um": 17550,
+      "observed": false
+    },
+    {
+      "index": 352,
+      "key": "z17600",
+      "z_um": 17600,
+      "observed": false
+    },
+    {
+      "index": 353,
+      "key": "z17650",
+      "z_um": 17650,
+      "observed": false
+    },
+    {
+      "index": 354,
+      "key": "ST115",
+      "z_um": 17700,
+      "observed": true
+    },
+    {
+      "index": 355,
+      "key": "z17750",
+      "z_um": 17750,
+      "observed": false
+    },
+    {
+      "index": 356,
+      "key": "z17800",
+      "z_um": 17800,
+      "observed": false
+    },
+    {
+      "index": 357,
+      "key": "z17850",
+      "z_um": 17850,
+      "observed": false
+    },
+    {
+      "index": 358,
+      "key": "z17900",
+      "z_um": 17900,
+      "observed": false
+    },
+    {
+      "index": 359,
+      "key": "z17950",
+      "z_um": 17950,
+      "observed": false
+    },
+    {
+      "index": 360,
+      "key": "z18000",
+      "z_um": 18000,
+      "observed": false
+    },
+    {
+      "index": 361,
+      "key": "z18050",
+      "z_um": 18050,
+      "observed": false
+    },
+    {
+      "index": 362,
+      "key": "ST116",
+      "z_um": 18100,
+      "observed": true
+    },
+    {
+      "index": 363,
+      "key": "z18150",
+      "z_um": 18150,
+      "observed": false
+    },
+    {
+      "index": 364,
+      "key": "z18200",
+      "z_um": 18200,
+      "observed": false
+    },
+    {
+      "index": 365,
+      "key": "z18250",
+      "z_um": 18250,
+      "observed": false
+    },
+    {
+      "index": 366,
+      "key": "z18300",
+      "z_um": 18300,
+      "observed": false
+    },
+    {
+      "index": 367,
+      "key": "z18350",
+      "z_um": 18350,
+      "observed": false
+    },
+    {
+      "index": 368,
+      "key": "z18400",
+      "z_um": 18400,
+      "observed": false
+    },
+    {
+      "index": 369,
+      "key": "z18450",
+      "z_um": 18450,
+      "observed": false
+    },
+    {
+      "index": 370,
+      "key": "z18500",
+      "z_um": 18500,
+      "observed": false
+    },
+    {
+      "index": 371,
+      "key": "z18550",
+      "z_um": 18550,
+      "observed": false
+    },
+    {
+      "index": 372,
+      "key": "z18600",
+      "z_um": 18600,
+      "observed": false
+    },
+    {
+      "index": 373,
+      "key": "z18650",
+      "z_um": 18650,
+      "observed": false
+    },
+    {
+      "index": 374,
+      "key": "z18700",
+      "z_um": 18700,
+      "observed": false
+    },
+    {
+      "index": 375,
+      "key": "z18750",
+      "z_um": 18750,
+      "observed": false
+    },
+    {
+      "index": 376,
+      "key": "z18800",
+      "z_um": 18800,
+      "observed": false
+    },
+    {
+      "index": 377,
+      "key": "z18850",
+      "z_um": 18850,
+      "observed": false
+    },
+    {
+      "index": 378,
+      "key": "ST117",
+      "z_um": 18900,
+      "observed": true
+    },
+    {
+      "index": 379,
+      "key": "z18950",
+      "z_um": 18950,
+      "observed": false
+    },
+    {
+      "index": 380,
+      "key": "z19000",
+      "z_um": 19000,
+      "observed": false
+    },
+    {
+      "index": 381,
+      "key": "z19050",
+      "z_um": 19050,
+      "observed": false
+    },
+    {
+      "index": 382,
+      "key": "z19100",
+      "z_um": 19100,
+      "observed": false
+    },
+    {
+      "index": 383,
+      "key": "z19150",
+      "z_um": 19150,
+      "observed": false
+    },
+    {
+      "index": 384,
+      "key": "z19200",
+      "z_um": 19200,
+      "observed": false
+    },
+    {
+      "index": 385,
+      "key": "z19250",
+      "z_um": 19250,
+      "observed": false
+    },
+    {
+      "index": 386,
+      "key": "ST118",
+      "z_um": 19300,
+      "observed": true
+    },
+    {
+      "index": 387,
+      "key": "z19350",
+      "z_um": 19350,
+      "observed": false
+    },
+    {
+      "index": 388,
+      "key": "z19400",
+      "z_um": 19400,
+      "observed": false
+    },
+    {
+      "index": 389,
+      "key": "z19450",
+      "z_um": 19450,
+      "observed": false
+    },
+    {
+      "index": 390,
+      "key": "z19500",
+      "z_um": 19500,
+      "observed": false
+    },
+    {
+      "index": 391,
+      "key": "z19550",
+      "z_um": 19550,
+      "observed": false
+    },
+    {
+      "index": 392,
+      "key": "z19600",
+      "z_um": 19600,
+      "observed": false
+    },
+    {
+      "index": 393,
+      "key": "z19650",
+      "z_um": 19650,
+      "observed": false
+    },
+    {
+      "index": 394,
+      "key": "ST119",
+      "z_um": 19700,
+      "observed": true
+    }
+  ],
+  "sampling": "uniform without replacement over all source voxels; sorted global row IDs",
+  "expression_semantics": "bin mean expression; total.bin is row sum of bin means",
+  "categories": [
+    "celltype_majority",
+    "regions_majority",
+    "region_majority",
+    "leiden_majority"
+  ],
+  "pathways": {
+    "SHH": [
+      "SHH",
+      "PTCH1",
+      "PTCH2",
+      "SMO",
+      "GLI1",
+      "GLI2",
+      "GLI3",
+      "SUFU",
+      "HHIP",
+      "GAS1",
+      "BOC",
+      "CDON",
+      "DISP1",
+      "SCUBE2",
+      "KIF7",
+      "GPR161"
+    ],
+    "WNT": [
+      "WNT1",
+      "WNT2B",
+      "WNT3A",
+      "WNT4",
+      "WNT5A",
+      "WNT7A",
+      "WNT7B",
+      "FZD1",
+      "FZD2",
+      "FZD3",
+      "FZD5",
+      "FZD7",
+      "FZD8",
+      "LRP5",
+      "LRP6",
+      "CTNNB1",
+      "APC",
+      "AXIN1",
+      "AXIN2",
+      "DKK1",
+      "DKK2",
+      "SFRP1",
+      "SFRP2",
+      "RSPO1",
+      "RSPO2"
+    ],
+    "BMP/TGF-beta": [
+      "BMP2",
+      "BMP4",
+      "BMP5",
+      "BMP6",
+      "BMP7",
+      "BMPR1A",
+      "BMPR1B",
+      "BMPR2",
+      "ACVR1",
+      "ACVR2A",
+      "ACVR2B",
+      "SMAD1",
+      "SMAD5",
+      "SMAD8",
+      "SMAD9",
+      "SMAD4",
+      "NOG",
+      "CHRD",
+      "GREM1",
+      "GREM2",
+      "TGFBR1",
+      "TGFBR2"
+    ],
+    "FGF": [
+      "FGF1",
+      "FGF2",
+      "FGF3",
+      "FGF4",
+      "FGF8",
+      "FGF9",
+      "FGF10",
+      "FGF17",
+      "FGF18",
+      "FGFR1",
+      "FGFR2",
+      "FGFR3",
+      "FGFR4",
+      "FGFRL1",
+      "FRS2",
+      "GRB2",
+      "SOS1",
+      "RAF1",
+      "BRAF",
+      "MAP2K1",
+      "MAPK1"
+    ],
+    "Retinoic acid": [
+      "ALDH1A1",
+      "ALDH1A2",
+      "ALDH1A3",
+      "RARA",
+      "RARB",
+      "RARG",
+      "RXRA",
+      "RXRB",
+      "RXRG",
+      "CYP26A1",
+      "CYP26B1",
+      "CYP26C1",
+      "STRA6",
+      "RBP1",
+      "CRABP1",
+      "CRABP2"
+    ],
+    "Additional genes": [
+      "PPP1R17",
+      "EPHB6",
+      "SLA",
+      "SHB",
+      "SOX2",
+      "PAX6"
+    ]
+  },
+  "genes": {
+    "SHH": {
+      "present": true,
+      "nonzero": 26534,
+      "p995": 1.0,
+      "max": 4.0,
+      "bytes": 80977
+    },
+    "PTCH1": {
+      "present": true,
+      "nonzero": 194475,
+      "p995": 1.1362500190734863,
+      "max": 6.0,
+      "bytes": 511001
+    },
+    "PTCH2": {
+      "present": true,
+      "nonzero": 101223,
+      "p995": 1.0,
+      "max": 6.0,
+      "bytes": 269992
+    },
+    "SMO": {
+      "present": true,
+      "nonzero": 150347,
+      "p995": 1.0,
+      "max": 8.0,
+      "bytes": 393785
+    },
+    "GLI1": {
+      "present": true,
+      "nonzero": 18375,
+      "p995": 1.0,
+      "max": 4.0,
+      "bytes": 61505
+    },
+    "GLI2": {
+      "present": true,
+      "nonzero": 200059,
+      "p995": 1.3333333730697632,
+      "max": 9.25,
+      "bytes": 521634
+    },
+    "GLI3": {
+      "present": true,
+      "nonzero": 457232,
+      "p995": 2.0,
+      "max": 10.0,
+      "bytes": 1222869
+    },
+    "SUFU": {
+      "present": true,
+      "nonzero": 275265,
+      "p995": 1.3333333730697632,
+      "max": 10.0,
+      "bytes": 712019
+    },
+    "HHIP": {
+      "present": true,
+      "nonzero": 45319,
+      "p995": 1.0,
+      "max": 5.0,
+      "bytes": 129450
+    },
+    "GAS1": {
+      "present": true,
+      "nonzero": 171673,
+      "p995": 2.0,
+      "max": 7.0,
+      "bytes": 458177
+    },
+    "BOC": {
+      "present": true,
+      "nonzero": 265779,
+      "p995": 1.5,
+      "max": 9.0,
+      "bytes": 698668
+    },
+    "CDON": {
+      "present": true,
+      "nonzero": 501309,
+      "p995": 1.6666666269302368,
+      "max": 22.0,
+      "bytes": 1318640
+    },
+    "DISP1": {
+      "present": true,
+      "nonzero": 32065,
+      "p995": 1.0,
+      "max": 4.0,
+      "bytes": 95535
+    },
+    "SCUBE2": {
+      "present": true,
+      "nonzero": 59134,
+      "p995": 1.0,
+      "max": 5.0,
+      "bytes": 164317
+    },
+    "KIF7": {
+      "present": true,
+      "nonzero": 105617,
+      "p995": 1.25,
+      "max": 4.199999809265137,
+      "bytes": 280525
+    },
+    "GPR161": {
+      "present": true,
+      "nonzero": 461350,
+      "p995": 1.5,
+      "max": 17.0,
+      "bytes": 1212799
+    },
+    "WNT1": {
+      "present": true,
+      "nonzero": 1278,
+      "p995": 1.0,
+      "max": 4.0,
+      "bytes": 6042
+    },
+    "WNT2B": {
+      "present": true,
+      "nonzero": 65240,
+      "p995": 1.3333333730697632,
+      "max": 6.0,
+      "bytes": 179347
+    },
+    "WNT3A": {
+      "present": true,
+      "nonzero": 22125,
+      "p995": 1.0,
+      "max": 5.0,
+      "bytes": 67389
+    },
+    "WNT4": {
+      "present": true,
+      "nonzero": 111834,
+      "p995": 1.0,
+      "max": 14.0,
+      "bytes": 297683
+    },
+    "WNT5A": {
+      "present": true,
+      "nonzero": 60464,
+      "p995": 1.2342500686645508,
+      "max": 5.0,
+      "bytes": 168764
+    },
+    "WNT7A": {
+      "present": true,
+      "nonzero": 131434,
+      "p995": 1.0,
+      "max": 4.0,
+      "bytes": 343964
+    },
+    "WNT7B": {
+      "present": true,
+      "nonzero": 241845,
+      "p995": 1.25,
+      "max": 7.0,
+      "bytes": 627197
+    },
+    "FZD1": {
+      "present": true,
+      "nonzero": 125702,
+      "p995": 1.2000000476837158,
+      "max": 5.0,
+      "bytes": 337676
+    },
+    "FZD2": {
+      "present": true,
+      "nonzero": 136300,
+      "p995": 1.3333333730697632,
+      "max": 6.0,
+      "bytes": 364250
+    },
+    "FZD3": {
+      "present": true,
+      "nonzero": 760464,
+      "p995": 1.5,
+      "max": 7.0,
+      "bytes": 2027615
+    },
+    "FZD5": {
+      "present": true,
+      "nonzero": 20832,
+      "p995": 1.5,
+      "max": 4.0,
+      "bytes": 65688
+    },
+    "FZD7": {
+      "present": true,
+      "nonzero": 143679,
+      "p995": 1.0,
+      "max": 5.0,
+      "bytes": 382129
+    },
+    "FZD8": {
+      "present": true,
+      "nonzero": 360609,
+      "p995": 2.0,
+      "max": 9.0,
+      "bytes": 969588
+    },
+    "LRP5": {
+      "present": true,
+      "nonzero": 215295,
+      "p995": 1.0,
+      "max": 5.0,
+      "bytes": 553718
+    },
+    "LRP6": {
+      "present": true,
+      "nonzero": 367247,
+      "p995": 1.5,
+      "max": 7.0,
+      "bytes": 961571
+    },
+    "CTNNB1": {
+      "present": true,
+      "nonzero": 826206,
+      "p995": 1.5,
+      "max": 7.599999904632568,
+      "bytes": 2193193
+    },
+    "APC": {
+      "present": true,
+      "nonzero": 817446,
+      "p995": 2.0,
+      "max": 10.0,
+      "bytes": 2199445
+    },
+    "AXIN1": {
+      "present": true,
+      "nonzero": 248404,
+      "p995": 1.3333333730697632,
+      "max": 8.0,
+      "bytes": 649696
+    },
+    "AXIN2": {
+      "present": true,
+      "nonzero": 161995,
+      "p995": 1.125,
+      "max": 6.0,
+      "bytes": 427964
+    },
+    "DKK1": {
+      "present": true,
+      "nonzero": 10475,
+      "p995": 1.0,
+      "max": 3.0,
+      "bytes": 37671
+    },
+    "DKK2": {
+      "present": true,
+      "nonzero": 94720,
+      "p995": 2.0,
+      "max": 12.0,
+      "bytes": 253214
+    },
+    "SFRP1": {
+      "present": true,
+      "nonzero": 616235,
+      "p995": 2.0,
+      "max": 10.0,
+      "bytes": 1675811
+    },
+    "SFRP2": {
+      "present": true,
+      "nonzero": 334472,
+      "p995": 1.5,
+      "max": 11.0,
+      "bytes": 871055
+    },
+    "RSPO1": {
+      "present": true,
+      "nonzero": 11731,
+      "p995": 1.2791666984558105,
+      "max": 5.0,
+      "bytes": 41904
+    },
+    "RSPO2": {
+      "present": true,
+      "nonzero": 72809,
+      "p995": 1.5,
+      "max": 11.0,
+      "bytes": 199216
+    },
+    "BMP2": {
+      "present": true,
+      "nonzero": 33560,
+      "p995": 1.0,
+      "max": 4.0,
+      "bytes": 99368
+    },
+    "BMP4": {
+      "present": true,
+      "nonzero": 31945,
+      "p995": 2.0,
+      "max": 5.0,
+      "bytes": 95703
+    },
+    "BMP5": {
+      "present": true,
+      "nonzero": 31625,
+      "p995": 2.0,
+      "max": 6.0,
+      "bytes": 93709
+    },
+    "BMP6": {
+      "present": true,
+      "nonzero": 66260,
+      "p995": 2.0,
+      "max": 7.0,
+      "bytes": 182103
+    },
+    "BMP7": {
+      "present": true,
+      "nonzero": 202820,
+      "p995": 1.3333333730697632,
+      "max": 9.0,
+      "bytes": 532718
+    },
+    "BMPR1A": {
+      "present": true,
+      "nonzero": 413143,
+      "p995": 1.5,
+      "max": 9.0,
+      "bytes": 1074838
+    },
+    "BMPR1B": {
+      "present": true,
+      "nonzero": 115332,
+      "p995": 1.5,
+      "max": 8.0,
+      "bytes": 306500
+    },
+    "BMPR2": {
+      "present": true,
+      "nonzero": 958264,
+      "p995": 2.0,
+      "max": 10.0,
+      "bytes": 2549975
+    },
+    "ACVR1": {
+      "present": true,
+      "nonzero": 253475,
+      "p995": 1.5,
+      "max": 8.0,
+      "bytes": 661284
+    },
+    "ACVR2A": {
+      "present": true,
+      "nonzero": 407083,
+      "p995": 1.2000000476837158,
+      "max": 6.0,
+      "bytes": 1065966
+    },
+    "ACVR2B": {
+      "present": true,
+      "nonzero": 371514,
+      "p995": 1.3333333730697632,
+      "max": 34.0,
+      "bytes": 972036
+    },
+    "SMAD1": {
+      "present": true,
+      "nonzero": 76507,
+      "p995": 1.3333333730697632,
+      "max": 5.0,
+      "bytes": 211035
+    },
+    "SMAD5": {
+      "present": true,
+      "nonzero": 305308,
+      "p995": 1.3333333730697632,
+      "max": 6.0,
+      "bytes": 802565
+    },
+    "SMAD8": {
+      "present": false,
+      "reason": "absent from final 3D gene intersection"
+    },
+    "SMAD9": {
+      "present": true,
+      "nonzero": 293402,
+      "p995": 1.2499037981033325,
+      "max": 8.0,
+      "bytes": 765453
+    },
+    "SMAD4": {
+      "present": true,
+      "nonzero": 501266,
+      "p995": 1.3333333730697632,
+      "max": 6.0,
+      "bytes": 1312612
+    },
+    "NOG": {
+      "present": true,
+      "nonzero": 52598,
+      "p995": 1.0,
+      "max": 8.0,
+      "bytes": 148261
+    },
+    "CHRD": {
+      "present": true,
+      "nonzero": 47746,
+      "p995": 1.0,
+      "max": 4.0,
+      "bytes": 133323
+    },
+    "GREM1": {
+      "present": true,
+      "nonzero": 11001,
+      "p995": 1.25,
+      "max": 4.0,
+      "bytes": 39915
+    },
+    "GREM2": {
+      "present": true,
+      "nonzero": 126098,
+      "p995": 1.3333333730697632,
+      "max": 11.0,
+      "bytes": 335105
+    },
+    "TGFBR1": {
+      "present": true,
+      "nonzero": 416903,
+      "p995": 1.3333333730697632,
+      "max": 7.0,
+      "bytes": 1092218
+    },
+    "TGFBR2": {
+      "present": true,
+      "nonzero": 121477,
+      "p995": 2.0,
+      "max": 5.0,
+      "bytes": 320807
+    },
+    "FGF1": {
+      "present": true,
+      "nonzero": 76575,
+      "p995": 1.3333333730697632,
+      "max": 7.0,
+      "bytes": 208527
+    },
+    "FGF2": {
+      "present": true,
+      "nonzero": 117621,
+      "p995": 1.5,
+      "max": 5.0,
+      "bytes": 315374
+    },
+    "FGF3": {
+      "present": true,
+      "nonzero": 11508,
+      "p995": 1.0,
+      "max": 7.0,
+      "bytes": 39831
+    },
+    "FGF4": {
+      "present": true,
+      "nonzero": 821,
+      "p995": 1.0,
+      "max": 4.0,
+      "bytes": 4045
+    },
+    "FGF8": {
+      "present": true,
+      "nonzero": 5831,
+      "p995": 1.0,
+      "max": 3.0,
+      "bytes": 22524
+    },
+    "FGF9": {
+      "present": true,
+      "nonzero": 133585,
+      "p995": 1.0,
+      "max": 6.0,
+      "bytes": 357546
+    },
+    "FGF10": {
+      "present": true,
+      "nonzero": 12098,
+      "p995": 1.0,
+      "max": 4.0,
+      "bytes": 42522
+    },
+    "FGF17": {
+      "present": true,
+      "nonzero": 22418,
+      "p995": 1.0,
+      "max": 4.0,
+      "bytes": 68478
+    },
+    "FGF18": {
+      "present": true,
+      "nonzero": 57893,
+      "p995": 1.0,
+      "max": 5.0,
+      "bytes": 160554
+    },
+    "FGFR1": {
+      "present": true,
+      "nonzero": 388243,
+      "p995": 2.0,
+      "max": 9.0,
+      "bytes": 1018258
+    },
+    "FGFR2": {
+      "present": true,
+      "nonzero": 345540,
+      "p995": 2.0,
+      "max": 17.0,
+      "bytes": 906821
+    },
+    "FGFR3": {
+      "present": true,
+      "nonzero": 386281,
+      "p995": 2.0,
+      "max": 14.0,
+      "bytes": 1021890
+    },
+    "FGFR4": {
+      "present": true,
+      "nonzero": 18297,
+      "p995": 1.0,
+      "max": 4.5,
+      "bytes": 60071
+    },
+    "FGFRL1": {
+      "present": true,
+      "nonzero": 78981,
+      "p995": 1.0,
+      "max": 7.0,
+      "bytes": 213156
+    },
+    "FRS2": {
+      "present": true,
+      "nonzero": 299623,
+      "p995": 1.3333333730697632,
+      "max": 11.0,
+      "bytes": 784156
+    },
+    "GRB2": {
+      "present": true,
+      "nonzero": 837868,
+      "p995": 1.5,
+      "max": 26.0,
+      "bytes": 2223138
+    },
+    "SOS1": {
+      "present": true,
+      "nonzero": 543638,
+      "p995": 1.5,
+      "max": 11.0,
+      "bytes": 1425384
+    },
+    "RAF1": {
+      "present": true,
+      "nonzero": 573426,
+      "p995": 1.2857142686843872,
+      "max": 10.0,
+      "bytes": 1489295
+    },
+    "BRAF": {
+      "present": true,
+      "nonzero": 541793,
+      "p995": 1.5,
+      "max": 10.0,
+      "bytes": 1414037
+    },
+    "MAP2K1": {
+      "present": true,
+      "nonzero": 373702,
+      "p995": 1.5,
+      "max": 9.5,
+      "bytes": 980041
+    },
+    "MAPK1": {
+      "present": true,
+      "nonzero": 676110,
+      "p995": 1.5,
+      "max": 8.666666984558105,
+      "bytes": 1788284
+    },
+    "ALDH1A1": {
+      "present": true,
+      "nonzero": 48873,
+      "p995": 4.5333333015441895,
+      "max": 25.0,
+      "bytes": 140544
+    },
+    "ALDH1A2": {
+      "present": true,
+      "nonzero": 100967,
+      "p995": 1.3333333730697632,
+      "max": 6.0,
+      "bytes": 267851
+    },
+    "ALDH1A3": {
+      "present": true,
+      "nonzero": 23238,
+      "p995": 1.5,
+      "max": 6.0,
+      "bytes": 71931
+    },
+    "RARA": {
+      "present": true,
+      "nonzero": 198482,
+      "p995": 1.0,
+      "max": 11.0,
+      "bytes": 515133
+    },
+    "RARB": {
+      "present": true,
+      "nonzero": 148572,
+      "p995": 1.5,
+      "max": 8.0,
+      "bytes": 400421
+    },
+    "RARG": {
+      "present": true,
+      "nonzero": 29145,
+      "p995": 1.0,
+      "max": 5.0,
+      "bytes": 86352
+    },
+    "RXRA": {
+      "present": true,
+      "nonzero": 190864,
+      "p995": 1.3333333730697632,
+      "max": 8.0,
+      "bytes": 497145
+    },
+    "RXRB": {
+      "present": false,
+      "reason": "absent from final 3D gene intersection"
+    },
+    "RXRG": {
+      "present": true,
+      "nonzero": 67902,
+      "p995": 1.0,
+      "max": 4.0,
+      "bytes": 195523
+    },
+    "CYP26A1": {
+      "present": true,
+      "nonzero": 68353,
+      "p995": 1.0,
+      "max": 5.0,
+      "bytes": 190985
+    },
+    "CYP26B1": {
+      "present": true,
+      "nonzero": 107470,
+      "p995": 1.3333333730697632,
+      "max": 8.0,
+      "bytes": 290156
+    },
+    "CYP26C1": {
+      "present": true,
+      "nonzero": 3162,
+      "p995": 1.0,
+      "max": 3.0,
+      "bytes": 13662
+    },
+    "STRA6": {
+      "present": true,
+      "nonzero": 64524,
+      "p995": 1.5,
+      "max": 14.0,
+      "bytes": 175513
+    },
+    "RBP1": {
+      "present": true,
+      "nonzero": 1008541,
+      "p995": 2.0,
+      "max": 11.0,
+      "bytes": 2749992
+    },
+    "CRABP1": {
+      "present": true,
+      "nonzero": 335158,
+      "p995": 2.5,
+      "max": 16.0,
+      "bytes": 909179
+    },
+    "CRABP2": {
+      "present": true,
+      "nonzero": 74006,
+      "p995": 1.5,
+      "max": 5.0,
+      "bytes": 200468
+    },
+    "PPP1R17": {
+      "present": true,
+      "nonzero": 238533,
+      "p995": 1.3333333730697632,
+      "max": 9.0,
+      "bytes": 646483
+    },
+    "EPHB6": {
+      "present": true,
+      "nonzero": 278011,
+      "p995": 1.0,
+      "max": 7.0,
+      "bytes": 728126
+    },
+    "SLA": {
+      "present": true,
+      "nonzero": 681744,
+      "p995": 2.0,
+      "max": 12.0,
+      "bytes": 1832120
+    },
+    "SHB": {
+      "present": true,
+      "nonzero": 304814,
+      "p995": 1.2000000476837158,
+      "max": 8.0,
+      "bytes": 798186
+    },
+    "SOX2": {
+      "present": true,
+      "nonzero": 735827,
+      "p995": 2.0,
+      "max": 15.0,
+      "bytes": 1996974
+    },
+    "PAX6": {
+      "present": true,
+      "nonzero": 461554,
+      "p995": 2.0,
+      "max": 11.0,
+      "bytes": 1251496
+    }
+  }
+}
