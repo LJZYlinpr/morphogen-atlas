@@ -1,53 +1,81 @@
 <!doctype html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#0b141a">
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Morphogen Atlas | AP · u · w</title>
+  <meta name="description" content="Human fetal cortex: shared gene gradient-response modules shown on three reconstructed fields.">
   <link rel="icon" href="data:,">
-  <title>Morphogen Pathways · Fetal Brain 3D</title>
-  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="style.css">
+  <script type="importmap">{"imports":{"three":"./vendor/three.module.js","three/addons/controls/OrbitControls.js":"./vendor/OrbitControls.js"}}</script>
+  <style>
+    body{background:#0f1417;color:#dce5e1}
+    .wrap{max-width:1980px;margin:0 auto;padding:26px 26px 40px}
+    .head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;border-bottom:1px solid #26333a;padding-bottom:18px}
+    .head h1{margin:6px 0 4px;font:400 clamp(26px,2.4vw,38px)/1.25 Georgia,serif}
+    .eyebrow{font:10px monospace;letter-spacing:2px;color:#8fa89b}
+    .head p{margin:0;color:#8fa1a8;font-size:13px;line-height:1.8;max-width:760px}
+    .stats{display:flex;gap:26px}.stats strong{display:block;font:26px Georgia,serif;color:#dce6ca}.stats span{font-size:11px;color:#8fa1a8}
+    .ctl{display:flex;flex-wrap:wrap;gap:14px;align-items:end;margin:20px 0}
+    .ctl label{font-size:12px;color:#8fa1a8;display:grid;gap:6px}
+    select,input[type=range]{font:inherit}
+    select{background:#16212a;color:#dce5e1;border:1px solid #2c3a42;border-radius:7px;padding:7px 9px;max-width:280px}
+    .toggle{display:flex;align-items:center;gap:6px;padding-bottom:12px}
+    .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+    .card{border:1px solid #26333a;border-radius:10px;overflow:hidden;background:#131b21}
+    .card h2{font:22px Georgia,serif;margin:14px 16px 2px}.card .dir{margin:0 16px 10px;font-size:12px;color:#8fa1a8}
+    .vp{height:430px;position:relative;background:radial-gradient(circle at 50% 44%,#1d2b33,#0d1418)}
+    .vp canvas{display:block;width:100%;height:100%}
+    .st{margin:10px 16px;min-height:40px;font-size:12px;line-height:1.7;color:#8fa1a8}
+    .curve{width:100%;height:120px;background:#111a20}.curve text{font:10px sans-serif;fill:#8fa1a8}
+    .bwr{height:11px;margin:10px 16px 3px;background:linear-gradient(90deg,#2850a5,#fff 50%,#bd2026)}
+    .sc{display:flex;justify-content:space-between;margin:0 16px 12px;font:11px monospace;color:#8fa1a8}
+    .pick{margin:0 16px 14px;font:11px monospace;min-height:30px;color:#a9bcc4;overflow-wrap:anywhere}
+    .panelinfo{margin:22px 0;border:1px solid #26333a;border-radius:10px;padding:16px 18px;background:#131b21;line-height:1.9;font-size:13px}
+    .panelinfo h3{margin:0 0 10px;font:19px Georgia,serif}
+    .trend{margin:6px 0}.trend b{color:#dce6ca}
+    .genes{font:12px monospace;color:#9fb3bb;overflow-wrap:anywhere}
+    .note{font-size:12px;line-height:1.9;color:#8296a0;margin:16px 0 0}
+    a{color:#b9db9d}
+    @media(max-width:980px){.grid{grid-template-columns:1fr}.vp{height:350px}.head{display:block}.stats{margin-top:14px}.wrap{padding:18px 14px 30px}}
+  </style>
 </head>
 <body>
-  <div class="app">
-    <header class="topbar">
-      <div class="brand"><span class="brand-mark"><i></i><i></i><i></i></span><span>Morphogen <b>Atlas</b><small>FETAL BRAIN / STATIC 3D VIEWER</small></span></div>
-      <div class="heading"><span>XYZ8 · FIXED 2M SAMPLE</span><h1>形态发生素通路空间表达图谱</h1></div>
-       <div class="status" id="status" role="status" aria-live="polite" data-state="loading">正在读取数据</div>
-    </header>
-    <main class="workspace">
-      <aside class="sidebar">
-        <section class="panel intro"><span class="eyebrow">STATIC DATASET</span><h2>全脑固定抽样</h2><p>395 个预计算层 · XYZ 50 μm 等比例</p><div class="metric"><strong id="sampleCount">--</strong><span>固定体素</span></div><div class="muted" id="dataSummary">加载中…</div></section>
-        <section class="panel">
-          <div class="section-title"><h2>显示内容</h2><span>01</span></div>
-          <select id="displayMode" aria-label="显示内容"><option value="gene">形态发生素基因表达</option><option value="celltype">细胞类型 · celltype_majority</option><option value="regions">解剖分区 · regions_majority</option><option value="region">大区 · region_majority</option><option value="leiden">聚类 · leiden_majority</option></select>
-          <label class="label" for="pathway">通路</label><select id="pathway"></select>
-          <label class="label" for="gene">基因</label><select id="gene"></select>
-          <p class="hint" id="geneHint">选择一个基因查看固定 200 万体素中的表达分布。</p>
-          <label class="check"><input id="showZero" type="checkbox"><span>显示零表达体素<small>以低亮度显示空间背景</small></span></label>
-           <label class="slider-label" for="threshold"><span>表达阈值 · 原始值</span><output id="thresholdValue" for="threshold">0</output></label><input id="threshold" type="range" min="0" max="1" step="any" value="0">
-        </section>
-        <section class="panel">
-          <div class="section-title"><h2>显示设置</h2><span>02</span></div>
-          <label class="slider-label"><span>点大小</span><output id="pointSizeValue">1.5 px</output></label><input id="pointSize" type="range" min="0.2" max="10" step="0.1" value="1.5">
-          <label class="slider-label"><span>不透明度</span><output id="opacityValue">72%</output></label><input id="opacity" type="range" min="0.15" max="1" step="0.05" value="0.72">
-          <label class="check"><input id="showAxes" type="checkbox" checked><span>显示空间坐标轴<small>物理坐标，XYZ 等比例</small></span></label>
-          <button id="resetView" class="button">重置视角</button><button id="export" class="button">导出 PNG</button>
-        </section>
-         <section class="panel note"><span class="eyebrow">DATA NOTE</span><p>本包只包含预先固定抽取的 200 万个 50 μm 体素。网页不连接 H5AD、不执行抽样或表达计算、不生成虚拟切片。</p><p>表达值是 bin mean expression；106 个预设基因中有 104 个可用。SMAD8 和 RXRB 不在最终数据中，不能视为零表达。</p></section>
-      </aside>
-      <section class="stage"><div id="viewport"></div><div class="stage-title"><span>3D SPATIAL EXPLORER</span><h2 id="sceneTitle">正在准备全脑空间</h2><p>已完成的 XYZ8 395 层体数据 · 固定样本</p></div><div class="toolbar"><button id="axisX">X</button><button id="axisY">Y</button><button id="axisZ">Z</button></div><div class="legend" id="legend"><h3 id="legendTitle">图例</h3><div id="legendBody"></div></div><div class="loading" id="loading"><div class="orbit"></div><h3>正在装载固定图谱</h3><p id="loadingText">读取空间坐标与标签</p></div><div class="inspector" id="inspector" hidden></div><div class="stage-foot"><span>拖动旋转 · 滚轮缩放 · Shift + 单击查看体素</span><span>PHYSICAL SPACE · μm</span></div></section>
-    </main>
-    <footer><span><i></i>离线静态数据包 · 无服务器计算</span><span id="footerInfo">--</span></footer>
+<div class="wrap">
+  <header class="head">
+    <div>
+      <div class="eyebrow">MORPHOGEN ATLAS · HUMAN FETAL CORTEX</div>
+      <h1>同一组基因模块，在三条重建曲率场上。</h1>
+      <p>八个共享基因模块由左右半球与径向场上的表达变化形状聚类得到。AP 在最左；u 左右半球合并显示；w 为外侧 0 → 内侧 100。颜色只表示相对基线的高低，不表示显著性。</p>
+    </div>
+    <div class="stats"><div><strong id="statModules">8</strong><span>共享模块</span></div><div><strong id="statGenes">—</strong><span>当前模块基因</span></div><div><strong id="statPoints">—</strong><span>公开展示体素</span></div></div>
+  </header>
+  <div class="ctl">
+    <label>模块<select id="moduleSelect"></select></label>
+    <label>壳层<select id="zoneSelect"></select></label>
+    <label>数值<select id="mode"><option value="observed">观测表达 · 相对基线</option><option value="fitted">拟合形状 · 中心化</option><option value="gradient">沿轴导数 · 零中心</option></select></label>
+    <label>点密度<select id="density"><option value="30000">3 万</option><option value="80000" selected>8 万</option><option value="all">全部展示点</option></select></label>
+    <label>点大小 <output id="sizeOut">1.6</output><input id="pointSize" type="range" min="0.8" max="4" step="0.1" value="1.6"></label>
+    <label class="toggle"><input id="autoSize" type="checkbox" checked>自动缩放点大小</label>
+    <label class="toggle"><input id="ctx" type="checkbox" checked>全皮层定位背景</label>
+    <label>透明度<input id="opacity" type="range" min="0.2" max="1" step="0.05" value="0.9"></label>
+    <label>w 下限<input id="wLow" type="range" min="0" max="1" step="0.01" value="0"></label>
+    <label>w 上限<input id="wHigh" type="range" min="0" max="1" step="0.01" value="1"></label>
+    <button id="reset">重置视角</button><button id="save">导出 PNG</button>
   </div>
-  <noscript>请在浏览器设置中启用 JavaScript 后重新打开。</noscript>
-  <script>
-    window.viewerScriptFailed = function (name) {
-      document.getElementById('status').textContent = '启动失败';
-      document.getElementById('loadingText').textContent = name + ' 未能加载。请完整解压 ZIP 到普通文件夹，不要在压缩软件中打开 HTML。';
-    };
-  </script>
-  <script src="boot.js" onerror="viewerScriptFailed('boot.js')"></script>
-  <script src="main.js" onerror="viewerScriptFailed('main.js')"></script>
-</body>
-</html>
+  <p id="status" style="font-size:12px;color:#8fa1a8" role="status">正在载入…</p>
+  <section class="grid">
+    <article class="card"><h2>AP</h2><p class="dir">后侧 0 → 前侧 100</p><div class="vp" id="vp-AP"></div><p class="st" id="st-AP"></p><svg class="curve" id="cv-AP"></svg><div class="bwr"></div><div class="sc" id="sc-AP"></div><p class="pick" id="pk-AP">点选可见体素</p></article>
+    <article class="card"><h2>u</h2><p class="dir">左右合并：左脑蓝、右脑红；两侧均中间 0 → 外侧 100</p><div class="vp" id="vp-u"></div><p class="st" id="st-u"></p><svg class="curve" id="cv-u"></svg><div class="bwr"></div><div class="sc" id="sc-u"></div><p class="pick" id="pk-u">点选可见体素</p></article>
+    <article class="card"><h2>w</h2><p class="dir">外侧 0 → 内侧 100</p><div class="vp" id="vp-w"></div><p class="st" id="st-w"></p><svg class="curve" id="cv-w"></svg><div class="bwr"></div><div class="sc" id="sc-w"></div><p class="pick" id="pk-w">点选可见体素</p></article>
+  </section>
+  <section class="panelinfo">
+    <h3 id="infoTitle">模块趋势</h3>
+    <div id="infoTrend"></div>
+    <p class="trend" id="infoGenes"></p>
+    <details><summary>全部基因成员</summary><p class="genes" id="infoAll"></p></details>
+  </section>
+  <p class="note">蓝 = 低于该壳层模块基线或负导数，白 = 0，红 = 高于基线或正导数。AP、u、w 三面板共用表达色标；u 面板左脑/右脑使用同一基因模块。拟合图是把各壳层的一维曲线投影回三维点，导数不是实测三维每毫米梯度；观测在体素尺度取 log、拟合在分箱尺度取 log，两者只比较空间形状。公开网页为均匀子采样并量化的展示版本，完整体素统计仍在本机分析数据中。</p>
+  <p class="note">数据来源：单一人胎皮层样本的三维重建（48 张真实切片）。样本量有限，模块是探索性的组织表达分组，不代表细胞内在机制，也不代表独立样本重复。</p>
+</div>
+<script type="module" src="app.js"></script>
+</body></html>
